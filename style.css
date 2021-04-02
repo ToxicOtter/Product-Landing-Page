@@ -1,0 +1,218 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Raleway:wght@400;700&display=swap');
+
+/* header and nav bar */
+header {
+  background-color: rgba(214, 89, 89, 1);
+  display: block;
+  top: 0;
+  height: 50px;
+  box-shadow: 5px 5px 15px black;
+  position: fixed;
+  width: 100%;
+}
+
+#header-img {
+  position: absolute;
+  max-width: 100%;
+  height: 50px;
+  left: 30px;
+}
+
+header h1 {
+  position: absolute;
+  left: 110px;
+  font-family: 'New Tegomin', serif;
+  font-size: 24px;
+  margin: 9px 5px 9px 0px;
+}
+
+#nav-bar {
+  position: absolute;
+  right:0;
+  display: block;
+  margin: 20px 0px 20px 0px;
+}
+
+.nav-link {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  color: rgba(90, 2, 2, 1);
+}
+
+/* main content */
+body {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,246,246,1) 67%);
+}
+
+main {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,230,230,1) 66%);
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  padding: 100px 50px 20px 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#pVideo {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+#stores {
+  text-align: center;
+  padding: 40px 0px 10px 0px ;
+}
+
+/* flexbox */
+#flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.flex img {
+  border-radius: 100%;
+}
+
+.storeP {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* grid */
+#pContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  width: 95%;
+  margin: auto;
+}
+
+#container div {
+  background-color: rgba(214, 89, 89, 1);
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  border: solid rgba(214, 89, 89, 1);
+}
+
+#container div:hover {
+  background-color: transparent;
+  border: solid rgba(214, 89, 89, 1);
+}
+
+#container div img {
+  width: 70%;
+  display: block;
+  margin: 30px 50px 30px 50px;
+  border-radius: 80px;
+}
+
+.price {
+  background-color: rgba(247, 231, 31,1);
+  width: 50%;
+  display: block;
+  margin: auto;
+  font-size: 30px;
+}
+
+/* feedback area */
+
+#form {
+  padding: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#email {
+  background-color: rgba(214, 89, 89, .5);
+  border: none;
+  border-bottom: solid 2px rgba(214, 89, 89, 1);
+  border-radius: 20px;
+  padding: 10px;
+  width: 70%;
+  margin: 20px;
+  color: white;
+}
+
+#email::placeholder {
+  color: white;
+  opacity: .9;
+}
+
+#submit {
+  border: none;
+  background-color: rgba(214, 89, 89, 1);
+  padding: 20px 25px 20px 25px;
+  border-radius: 30%;
+  font-size: 18px;
+  border: solid rgba(214, 89, 89, 1);
+  color: white;
+}
+
+#submit:hover {
+  border: solid rgba(214, 89, 89, 1);
+  background: transparent;
+  color: rgba(214, 89, 89, 1);
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: rgba(214, 89, 89, 1);
+  display: block;
+  bottom: 0;
+  height: 40px;
+  box-shadow: 5px 5px 15px black;
+  margin-top: 30px;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+@media (max-width: 1200px){
+  #video {
+    height: 250px;*/
+  }
+  #container div img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px){
+  #nav-bar {
+    display: none;
+  }
+}
